@@ -42,7 +42,6 @@ jobs:
       macOS:
         OSName: ${{ variables.MacOSName }}
         ImageName: ${{ variables.MacOSImage }}
-        condition: eq(variables.IsGenerateBased, false)
   pool:
     vmImage: $(ImageName)
 

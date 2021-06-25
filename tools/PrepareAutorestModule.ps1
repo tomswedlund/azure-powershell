@@ -96,3 +96,5 @@ foreach ($Module in $ModuleList)
 }
 #EndRegion
 Copy-Item "$TmpFolder\*" "$PSScriptRoot\..\src" -Recurse -Force
+
+dotnet nuget locals all --clear
